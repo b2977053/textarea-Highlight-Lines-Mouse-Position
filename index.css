@@ -1,0 +1,34 @@
+.textarea-container {
+  position: relative;
+}
+textarea,
+.highlighter {
+  font-family: monospace;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+textarea {
+  height: 200px;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+.highlighter {
+  border: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: transparent;
+  overflow: hidden;
+}
+.highlight-line {
+  background-color: lightgrey;
+}
+pre {
+  margin: 0px;
+}
